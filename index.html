@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>🔒 Jual Akun VVIP VVIP 🔥</title>
+  <style>
+    body {
+      background-image: url('bg-vvip.jpg'); /* Ganti ini dengan background kamu */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      background-color: rgba(0,0,0,0.75);
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.2);
+    }
+
+    h1 {
+      color: #FFD700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label, select, input, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #FF1493;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .list-akun {
+      margin-top: 30px;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="jatah-mantan.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <h1>🛒 Akun VVIP / NP Manager VVIP</h1>
+
+  <form onsubmit="beliAkun(); return false;">
+    <label>Nama Kamu:</label>
+    <input type="text" id="nama" required>
+
+    <label>Pilih Akun VVIP:</label>
+    <select id="akun">
+      <option value="VVIP VVIP Unlimited - Rp 50.000">VVIP VVIP Unlimited - Rp 50.000</option>
+      <option value="NP Manager VVIP - Rp 45.000">NP Manager VVIP - Rp 45.000</option>
+      <option value="Bypass Premium Login - Rp 30.000">Bypass Premium Login - Rp 30.000</option>
+    </select>
+
+    <button type="submit">🔐 Beli Sekarang via WhatsApp</button>
+  </form>
+
+  <div class="list-akun">
+    <h2>📦 Stok VVIP Tersedia</h2>
+    <ul>
+      <li>VVIP VVIP - 300 stok</li>
+      <li>NP Manager Full Access - 6 stok</li>
+      <li>Akun Combo Bundle - 3 stok</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function beliAkun() {
+  const nama = document.getElementById("nama").value;
+  const akun = document.getElementById("akun").value;
+  const noWa = "6283838286725"; // Ganti dengan nomor WA kamu
+
+  const pesan = `Halo kak, saya *${nama}* mau beli *${akun}*. Masih ready?`;
+  const url = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
